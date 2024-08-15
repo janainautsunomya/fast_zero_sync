@@ -33,6 +33,7 @@ quote-style = 'single'
 
 [tool.taskipy.tasks]
 run = 'fastapi dev fastapidozero/app.py'
+
 pre_test = 'task lint'
 test = 'pytest -s -x --cov=fastapidozero -vv'
 post_test = 'coverage html'
